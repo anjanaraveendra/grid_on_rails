@@ -5,3 +5,9 @@
 #
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
+
+
+(51..100).each do |i|
+	User.create(:first_name => "First Name #{i}",:last_name => "Last Name #{i}",:phone => rand.to_s[2..11] )
+end	
+
